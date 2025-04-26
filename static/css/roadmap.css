@@ -1,0 +1,49 @@
+.final-section {
+    padding: 50px 50px;
+    background: #ffffff;
+    text-align: center;
+}
+
+.final-image {
+    width: 100%;
+    max-height: 90vh;
+    object-fit: cover;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    margin-bottom: 40px;
+}
+
+.final-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.final-buttons .btn {
+    padding: 14px 30px;
+    border-radius: 50px;
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+    background-color: #0077ff;
+    color: #ffffff;
+    transition: all 0.3s ease;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+}
+
+.final-buttons .btn:hover {
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.final-buttons .btn-outline {
+    background-color: #ffffff;
+    color: #0077ff;
+    border: 2px solid #0077ff;
+}
+
+.final-buttons .btn-outline:hover {
+    background: #0077ff;
+    color: #ffffff;
+}

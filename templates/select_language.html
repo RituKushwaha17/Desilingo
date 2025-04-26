@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Select Language - DesiLingo</title>
+    <link rel="stylesheet" href="/static/css/language.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/6.7.0/css/flag-icons.min.css" />
+
+</head>
+<body>
+    <div class="container">
+        <img src="/static/images/parrot.png" alt="Logo" class="corner-img">
+
+        <h2>Select a Language to Learn</h2>
+
+        
+        <div class="language-selector">
+            <button class="language-btn hindi" data-language="telugu">
+                <span class="fi fi-in"></span> Telugu
+            </button>
+            <button class="language-btn bengali" data-language="bengali">
+                <span class="fi fi-in"></span> Bengali
+            </button>
+            <button class="language-btn tamil" data-language="tamil">
+                <span class="fi fi-in"></span> Tamil
+            </button>
+            <button class="language-btn telugu" data-language="odiya">
+                <span class="fi fi-in"></span> Odiya
+            </button>
+            <button class="language-btn marathi" data-language="marathi">
+                <span class="fi fi-in"></span> Marathi
+            </button>
+            <button class="language-btn punjabi" data-language="punjabi">
+                <span class="fi fi-in"></span> Punjabi
+            </button>
+            <button class="language-btn gujarati" data-language="gujarati">
+                <span class="fi fi-in"></span> Gujarati
+            </button>
+            <button class="language-btn kannada" data-language="kannada">
+                <span class="fi fi-in"></span> Kannada
+            </button>
+            <button class="language-btn malayalam" data-language="malayalam">
+                <span class="fi fi-in"></span> Malayalam
+            </button>
+        </div>
+
+        <!-- Hidden Form -->
+        <form id="language-form" action="/select-mode" method="POST" style="display: none;">
+            <input type="hidden" name="language" id="language-input">
+        </form>
+
+        <script>
+            // Add event listener to each button
+            document.querySelectorAll('.language-btn').forEach(button => {
+                button.addEventListener('click', function () {
+                    const selectedLanguage = this.getAttribute('data-language');
+                    document.getElementById('language-input').value = selectedLanguage;
+                    document.getElementById('language-form').submit();
+                });
+            });
+        </script>
+    </div>
+</body>
+
+</html>

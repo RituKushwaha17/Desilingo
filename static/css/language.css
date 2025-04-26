@@ -1,0 +1,133 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-image: url('https://assets.kpmg.com/is/image/kpmg/kpmg-indigenous-peoples-policy-blue-circle-design:cq5dam.web.1200.600');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 40px;
+    border-radius: 25px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 600px;
+}
+
+.container h2 {
+    font-size: 30px;
+    color: #333;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+.language-selector {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.language-btn {
+    padding: 15px 20px;
+    width: 130px;
+    font-size: 13px;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    font-weight: 600;
+}
+
+.language-btn.hindi {
+    background-color: #ff5722; /* Hindi */
+}
+
+.language-btn.bengali {
+    background-color: #008CBA; /* Bengali */
+}
+
+.language-btn.tamil {
+    background-color: #4caf50; /* Tamil */
+}
+
+.language-btn.telugu {
+    background-color: #ffeb3b; /* Telugu */
+}
+
+.language-btn.marathi {
+    background-color: #673ab7; /* Marathi */
+}
+
+.language-btn.punjabi {
+    background-color: #f44336; /* Punjabi */
+}
+
+.language-btn.gujarati {
+    background-color: #9c27b0; /* Gujarati */
+}
+
+.language-btn.kannada {
+    background-color: #00bcd4; /* Kannada */
+}
+
+.language-btn.malayalam {
+    background-color: #3f51b5; /* Malayalam */
+}
+
+.language-btn:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.fi {
+    width: 20px;
+    height: 15px;
+    background-size: cover;
+    border-radius: 3px;
+}
+
+@media (max-width: 768px) {
+    .language-selector {
+        flex-direction: column;
+    }
+}
+@keyframes move-across {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(100%); /* Move full width */
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.corner-img {
+    position: absolute;
+    top: 21px; /* Thoda container ke upar */
+    left: 45%;
+    width: 100px;
+    height: auto;
+    z-index: 20;
+    animation: move-across 5s ease-in-out infinite;
+}
+

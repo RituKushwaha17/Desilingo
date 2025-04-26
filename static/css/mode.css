@@ -1,0 +1,118 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-image: url('/static/images/mode-bg.jpg'); 
+    background-size: cover;  
+    background-position: center;  
+    background-repeat: no-repeat;  
+    background-attachment: fixed; 
+    height: 100vh;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    color: #333;
+    overflow: hidden;
+}
+
+
+.container {
+    text-align: center;
+    background-color: rgb(248, 238, 238); 
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2); 
+    width: 80%;
+    max-width: 600px;
+    color: rgb(14, 13, 13); 
+}
+
+.container h2 {
+    font-size: 32px;
+    color: #0e0d0d;
+    font-weight: 600;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+
+.container p {
+    font-size: 18px;
+    color: #0a0909;
+    margin-bottom: 40px;
+    font-weight: 400;
+}
+
+button {
+    background-color: #0c3f9d; 
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    border: none;
+    border-radius: 10px;
+    padding: 15px 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 15px;
+}
+
+
+button:hover {
+    transform: translateY(-3px);
+    background-color: #288ce4; 
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+button:active {
+    transform: translateY(1px);
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 30px;
+        width: 90%;
+    }
+
+    button {
+        font-size: 16px;
+        padding: 12px 25px;
+        width: 100%;
+    }
+}
+
+button:focus {
+    outline: none;
+    box-shadow: 0 0 10px rgba(255, 87, 34, 0.5);
+}
+@keyframes bounce {
+    0%, 100% {
+        transform: translateX(-50%) translateY(0);
+    }
+    50% {
+        transform: translateX(-50%) translateY(-10px);
+    }
+}
+
+.cat-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 16%;
+    left: 69%;
+    transform: translateX(-50%);
+    animation: bounce 2s infinite ease-in-out;
+    transition: transform 0.3s ease;
+}
+
+.cat-image:hover {
+    transform: translateX(-50%) scale(1.1);
+}
+

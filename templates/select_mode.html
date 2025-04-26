@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Select Mode - DesiLingo</title>
+    <link rel="stylesheet" href="/static/css/mode.css">
+</head>
+<body>
+    <div class="container">
+        <img src="/static/images/cat.png" alt="" class="cat-image">
+        <h2>Choose How You Want to Learn</h2>
+        <p>Language selected: <strong>{{ language.title() }}</strong></p>
+
+        <form action="/start-learning" method="POST">
+            <input type="hidden" name="language" value="{{ language }}">
+            <button type="submit" name="mode" value="voice">🎤 Voice Mode</button>
+            <br><br>
+            <button type="submit" name="mode" value="gesture">🖐 Gesture Mode</button>
+        </form>
+    </div>
+</body>
+</html>

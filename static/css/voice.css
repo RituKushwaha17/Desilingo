@@ -1,0 +1,125 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+body {
+    background-image: url('https://varconnection.files.wordpress.com/2022/11/5352_sm_var_speechtext.jpg?w=1024'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    height: 100vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    padding: 20px;
+    text-align: center;
+    flex-direction: column;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.9); 
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    width: 100%;
+    color: #333;
+}
+
+
+h2 {
+    font-size: 36px;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+h3 {
+    font-size: 28px;
+    color: #34495e;
+    margin-top: 30px;
+}
+
+p {
+    font-size: 18px;
+    color: #555;
+    margin: 10px 0;
+}
+
+button {
+    background-color: #0a61c5; 
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    border: none;
+    border-radius: 10px;
+    padding: 15px 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin: 15px 0;
+    width: 60%;
+    max-width: 300px;
+}
+
+button:hover {
+    transform: translateY(-3px);
+    background-color: #de058f; 
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+button:active {
+    transform: translateY(1px);
+}
+
+#hindiResult, #translatedWord, #userRepeat {
+    font-size: 20px;
+    font-weight: bold;
+    color: #2ecc71; 
+    margin-top: 10px;
+}
+
+#resultMessage {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+audio {
+    margin-top: 20px;
+    width: 100%;
+    max-width: 300px;
+    border-radius: 8px;
+    background-color: #f1f1f1;
+    padding: 5px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 30px;
+        width: 90%;
+    }
+
+    button {
+        font-size: 16px;
+        padding: 12px 25px;
+        width: 100%;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    h3 {
+        font-size: 24px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+}

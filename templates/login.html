@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - DesiLingo</title>
+    <link rel="stylesheet" href="/static/css/login.css">
+</head>
+<body>
+    <div class="login-container">
+        <div class="orbit-wrapper">
+            <img src="/static/images/elephant.png" alt="orbiting" class="orbit-image">
+          </div>
+        <div class="login-card">
+            <h2>Welcome Back</h2>
+            <h3>Please Login to your account</h3>
+            <form action="/login" method="POST">
+                <div class="input-group">
+                    <input type="email" name="email" placeholder="Email Address" required>
+                </div>
+                <div class="input-group">
+                    <input type="password" name="password" placeholder="Password" required>
+                </div>
+                <button type="submit">Log In</button>
+                <p class="signup-link">New here? <a href="/signup">Create an account</a></p>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
